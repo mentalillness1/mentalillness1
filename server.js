@@ -27,7 +27,6 @@ const View = mongoose.model('View', viewSchema);
 
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, 'public')));
-
 // Routes
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'home', 'index.html'));
