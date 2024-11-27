@@ -1,0 +1,33 @@
+/* General body styling */
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+/* Table Styling */
+.table {
+    color: #fff; /* Table text color */
+    background-color: #333; /* Dark table background */
+}
+.table-bordered th, .table-bordered td {
+    border: 1px solid #555; /* Light gray borders */
+}
+
+/* Embedded Spreadsheet Styling */
+.spreadsheet-container {
+    display: none; /* Initially hidden */
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Smooth fade-in */
+}
+
+/* Buttons Container Styling */
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons-container .btn {
+    width: 100%; /* Full width buttons */
+    max-width: 300px; /* Maximum width */
+}

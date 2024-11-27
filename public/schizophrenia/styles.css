@@ -1,0 +1,189 @@
+body {
+  background-color: black !important;
+}
+
+.title {
+  font-family: Kanit;
+  font-size: 70px;
+  color: white;
+  left: 0;
+  line-height: 200px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.navbar {
+  background-color: black !important; 
+  font-family: Roboto !important;
+  margin-left: 10px;
+  font-weight: bolder;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: white !important; 
+}
+
+.navbar .nav-link:hover {
+  color: #ff4d4d !important; 
+}
+
+.navbar-toggler {
+  background-color: black !important; 
+  border-color: white !important; 
+}
+
+.navbar-toggler-icon {
+  background-color: white !important; 
+}
+
+.section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.section-title {
+  color: white;
+  font-family: Kanit;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between items as needed */
+}
+
+.grid-item {
+  flex: 0 1 calc(50% - 40px); /* Two cards per row with margins */
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #fff; /* White outline */
+  background-color: #000; /* Blackish background */
+  border-radius: 12px; /* Rounded edges */
+  text-align: left; /* Align text to the left inside the card */
+  color: #fff; /* White text color for better contrast on dark background */
+  font-family: Kanit;
+}
+
+.grid-item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: Kanit;
+}
+
+.grid-item p {
+  font-size: 16px;
+  font-family: Kanit;
+  color: #cccccc;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3); /* Added subtle white glow */
+}
+
+/* Scroll Down Indicator */
+.scroll-down-indicator {
+  position: absolute;
+  bottom: 50px; /* Ensure it appears above the fold */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.scroll-down-indicator a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-down-indicator a:hover {
+  color: #ff4d4d; /* Matches the hover effect in the navbar */
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Updated grid-container for the second section with unique class names */
+.grid-container-ocdinfo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+  grid-template-rows: repeat(2, auto);  /* Create 2 rows */
+  gap: 20px; /* Add space between items */
+  margin-top: 20px; /* Adjust top margin */
+}
+
+/* Style for grid items in the second section with unique class names */
+.grid-item-ocdinfo {
+  padding: 20px;
+  border: 1px solid #fff;
+  background-color: #000;
+  border-radius: 12px;
+  color: #fff;
+  text-align: left;
+  font-family: Kanit;
+}
+
+.grid-item-ocdinfo h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.grid-item-ocdinfo p {
+  font-size: 16px;
+  color: #cccccc;
+}
+
+/* Hover effect for grid items */
+.grid-item-ocdinfo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* For larger tablets and smaller screens, switch to 2 columns */
+@media (max-width: 1200px) {
+  .grid-container-ocdinfo {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet */
+  }
+}
+
+/* For small mobile screens, switch to 1 column */
+@media (max-width: 768px) {
+  .grid-container-ocdinfo {
+      grid-template-columns: 1fr; /* 1 column for small devices */
+  }
+}
+
+
+.test-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#formContainer.hidden {
+  display: none;
+}
+
+#formContainer.visible {
+  display: block;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
