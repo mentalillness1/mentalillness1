@@ -8,9 +8,7 @@ const PORT = process.env.PORT || 3000; // Use Vercel's environment variable or d
 
 // Connect to MongoDB
 mongoose
-  .connect(
-    process.env.MONGO_URI
-  )
+  .connect('mongodb+srv://andymikhael:andymikhael2010@gym.7iqbg.mongodb.net/?retryWrites=true&w=majority&appName=gym')
   .then(() => {
     console.log(chalk.blue('🔗 Database Connected'));
   })
